@@ -1,0 +1,229 @@
+/** ------------------------------- IMPORTS ----------------------------------- **/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+/** ------------------------------- GERAL ----------------------------------- **/
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;
+    line-height: 1.8em;
+    box-sizing: border-box;
+}
+
+/** ------------------------------- LAYOUT ----------------------------------- **/
+input[type="text"], select, input[type="search"]{
+    display: block;
+    padding: 8px 5px;
+}
+label{
+    display: block;
+    padding: 6px 0 0 0;
+}
+
+h1, h2, h3, h4,h5, h6{
+    padding: 10px 0 10px 0;
+}
+
+.msg{
+    width: 100%;
+    margin: 8px 0;
+    padding:8px;
+    display: block;
+    background-color: #eeeeee;
+    color: #000000;
+    border-radius: 8px;
+}
+.msg-sucesso{
+    background-color: #4169E1;
+    color: #ffffff;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.msg-erro{
+    background-color: #F08080;
+    color: #FF0000;
+    border: 1px solid #FF0000;
+}
+
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.cabecalho{
+    background-color: #4169E1;
+    color: #ffffff;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-principal ul{
+    padding: 10px;
+    margin-left: 40px;
+}
+.menu-principal ul li{
+    list-style: none;
+}
+
+.menu-principal ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.secao-formulario, .secao-filtro, .secao-tabela{
+    padding: 10px;
+}
+
+.secao-formulario{
+    padding-top: 40px;
+}
+.secao-formulario input[type="text"]{
+    width: 100%;
+}
+
+.secao-filtro .container{
+    padding: 20px;
+}
+
+.secao-filtro form{
+    width: 100%;
+}
+
+.secao-filtro input[type="search"],
+.secao-filtro input[type="text"],
+select{
+    margin: 10px 0;
+}
+
+.secao-filtro input[type="search"]{
+    width: 90%;
+}
+
+.secao-filtro select{
+    width: 40%;
+}
+.opcoes select {
+    width: 60px;
+}
+
+.botao-filtrar{
+    padding: 6px 10px;
+}
+
+.botao{
+    padding: 8px 25px;
+    border-radius: 4px;
+    border: none;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.botao-inserir{
+    background-color: #4169E1;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10px;
+    }
+
+.botao-atualizar{
+    background-color: #4169E1;
+    margin: 0 2px;
+    color: #ffffff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.botao-voltar{
+    color: #0000FF;
+
+}
+
+.botao-excluir{
+    background-color: #FF4500;
+    margin: 0 2px;
+    color: #ffffff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 4px;
+}
+.form-cadastro{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.form-filtro{
+    width: 100%;
+}
+
+.filtro-nome{
+    width: 80%;
+}
+
+.filtro-preco{
+    display: flex;
+    align-items: center;
+}
+
+.filtro-preco .opcoes,
+.filtro-preco .opcoes-menorque,
+.filtro-preco .opcoes-igual,
+.filtro-preco .opcoes-maiorque{
+    display: flex;
+    align-items: baseline;
+    margin-left: 10px;
+}
+
+.tabela{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tabela thead{
+    font-weight: 900;
+}
+.tabela thead td{
+    background-color: #ccc;
+}
+.tabela tbody td{
+    padding: 8px;
+}
+
+.tabela .acoes{
+    display: flex;
+    justify-content: center;
+}
+
+.tabela .acoes i{
+    padding: 8px 5px;
+}
+
+.rodape{
+    width: 100%;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+@media(max-width: 492px){
+    
+    .filtro-preco{
+        display: block;
+    }
+    .filtro-preco .opcoes{
+        display: block;
+    }
+}

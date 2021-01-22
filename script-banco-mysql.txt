@@ -1,0 +1,18 @@
+create database testetitan;
+
+use testetitan;
+
+create table Produtos(
+    idprod Integer primary key not null auto_increment,
+    nome varchar(60) not null,
+    cor varchar(50) not null,
+    idpreco Integer not null
+);
+
+create table Preco(
+idpreco Integer primary key not null auto_increment,
+preco decimal(8,2) not null
+);
+
+alter table Produtos add constraint fk_idpreco foreign key(idpreco)
+references Preco (idpreco);
